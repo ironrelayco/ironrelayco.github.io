@@ -1,0 +1,23 @@
+# robots.txt for IronRelay
+# https://www.ironrelayco.com/robots.txt
+
+User-agent: *
+Allow: /
+
+# Prevent crawling of system/private paths if added later
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /private/
+Disallow: /admin/
+
+# Allow important assets for rendering
+Allow: /*.css$
+Allow: /*.js$
+Allow: /*.png$
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.webp$
+Allow: /*.svg$
+
+# Sitemap
+Sitemap: https://www.ironrelayco.com/sitemap.xml
